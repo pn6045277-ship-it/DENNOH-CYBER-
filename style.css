@@ -1,0 +1,680 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  background-color: #040019;
+  font-family: "Valley Sans", sans-serif;
+}
+
+.header-text {
+  color: white;
+  display: flex;
+}
+
+.header-text svg {
+  margin-right: 2px;
+  width: 50px;
+}
+
+.whatsapp {
+  color: rgb(1, 208, 1);
+  width: 50px;
+  margin-right: 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px;
+}
+
+.contact-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  color: white;
+  display: flex;
+}
+
+.title #link {
+  color: rgb(255, 119, 0);
+}
+
+.title p {
+  font-size: 13px;
+}
+
+.title .img img {
+  width: 70px;
+}
+
+nav {
+  border-top: 1.5px solid rgba(3, 11, 114, 0.913);
+  border-bottom: 1.8px solid rgb(10, 21, 107);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 30px;
+  position: relative;
+  align-items: top;
+}
+
+.navlinks ul {
+  display: flex;
+  margin-top: 20px;
+}
+
+.navlinks ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.navlinks ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navlinks-phone {
+  display: none;
+}
+
+.navbar #hideMenu {
+  display: none;
+}
+
+.navbar .menu-btn {
+  display: none;
+}
+ /* #showMenu{
+  display: none;
+} */
+.navlinks ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navlinks ul li a:hover {
+  text-decoration: 2px solid underline orangered;
+  text-underline-offset: 5px;
+  transition: 1s;
+}
+
+.request .request-services {
+  padding: 10px 15px 10px 5px;
+  background-color: orangered;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.request .request-services:hover {
+  background-color: rgb(243, 242, 242);
+  color: orangered;
+  transition: 1s;
+}
+
+.request .request-services svg {
+  position: relative;
+  top: 5px;
+}
+
+.request a {
+  text-decoration: none;
+}
+
+.land-page-text {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.land-page-text #welcome {
+  color: white;
+  font-size: 1.5em;
+}
+
+.land-page {
+  background-image: url(images/IMG_COM_202609081945181632.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60vh;
+}
+
+.land-page-text h1 {
+  color: white;
+  font-size: 50px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.land-page-text #link {
+  color: orangered;
+}
+
+.land-page-text h3 {
+  color: white;
+  text-align: left;
+}
+
+.land-page-text {
+  background-color: rgba(1, 1, 34, 0.821);
+  backdrop-filter: blur(2px);
+  width: 100%;
+  height: 100%;
+}
+
+.land-page-text #land-page-par {
+  color: white;
+  font-size: 2.5ch;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.land-page-text a {
+  padding: 10px 40px;
+  margin-top: 20px;
+  background-color: rgb(253, 69, 3);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+.land-page-text a {
+  text-decoration: none;
+}
+
+.land-page-text a:hover {
+  background-color: white;
+  color: rgb(253, 69, 3);
+  transition: 1s;
+}
+
+.land-page-text .visit-us:hover {
+  background-color: rgba(255, 70, 3, 0.953);
+  scale: 1.05;
+  transition: 1s;
+}
+
+.our-services {
+  color: white;
+  padding: 10px 0 0 40px;
+  font-size: 2.1em;
+}
+
+#big {
+  font-size: 3em;
+  text-decoration: 3px underline orange;
+  text-underline-offset: 5px;
+}
+
+.about-card h1 {
+  font-size: 3em;
+  text-decoration: 3px underline orange;
+  text-underline-offset: 5px;
+}
+
+#our-services {
+  color: white;
+  margin-left: 40px;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+#link {
+  color: orange;
+  font-size: 1.3em;
+}
+
+.cards .card-head {
+  color: orange;
+  display: inline;
+  font-size: 1.3em;
+}
+
+.cards svg {
+  color: orangered;
+  display: inline;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.cards {
+  border: 2px solid rgba(8, 0, 255, 0.338);
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  animation: slideleft;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+  
+}
+.cards:hover{
+  animation: 1s 1 cards-play;
+}
+.cards #our-services {
+  margin: 5px;
+  font-size: 1.1em;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 20px 10px 20px;
+  animation: 2s infinite playing;
+}
+
+.lower-text {
+  border: 1px solid rgba(8, 0, 255, 0.338);
+  margin: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.lower-text .media h2 {
+  color: white;
+  margin-bottom: 5px;
+  font-size: 2em;
+  display: inline;
+}
+
+.lower-text .media svg {
+  display: inline;
+  margin-right: 10px;
+  color: rgb(251, 159, 0);
+}
+
+.lower-text .media {
+  border-right: 1px solid orange;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.lower-text #no-border {
+  border: none;
+}
+
+.lower-text .media .media-infor {
+  color: white;
+  font-size: 1.3em;
+}
+
+.about-container {
+  padding: 10px 20px 10px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-container .about-card .our-services {
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.about-card {
+  animation: slideleft;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+}
+
+.about-card .request-services {
+  margin-bottom: 0;
+  color: rgb(194, 127, 3);
+  font-size: 20px;
+  animation: slideleft;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+}
+
+.about-card .request-services:hover {
+  color: orange;
+}
+
+.about-card details summary {
+  text-align: left;
+}
+
+.about-card details #our-services {
+  font-size: 1.1em;
+  text-align: left;
+}
+
+.about-card #our-services {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 1.3em;
+  word-spacing: 1px;
+}
+
+.about-container h2 {
+  color: orange;
+}
+
+.gallery .img {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 10px;
+  justify-content: left;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery .our-services {
+  text-decoration: 3px solid underline orange;
+  text-underline-offset: 9px;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.gallery .img img {
+  max-height: 200px;
+  max-width: 100%;
+  min-width: 150px;
+  border-radius: 5px;
+  animation: slideleft;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+}
+
+footer #our-services {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes slideleft {
+  from {
+    opacity: 0;
+    scale: 0.8;
+    transform: rotateX(20deg);
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(2px);
+    transition-delay: 2s;
+  }
+}
+
+@keyframes playing {
+  0% {
+    box-shadow: 3px 4px 3px 2px rgba(2, 2, 166, 0.389);
+  }
+
+  50% {
+    box-shadow: 0;
+  }
+
+  100% {
+    box-shadow: 2px 4px 8px 8px rgba(0, 87, 227, 0.476);
+  }
+}
+@keyframes cards-play{
+  0%{
+    scale: 0.5;
+  }
+  100%{
+    scale: 1;
+  }
+}
+
+/* media design  responsiveness */
+
+@media(max-width: 768px) {
+  .navbar .menu-btn {
+    display: block;
+  }
+
+  .navbar #hideMenu {
+    display: block;
+  }
+
+  .navlinks-phone {
+    display: none;
+    position: absolute;
+    right: 0;
+    margin: 0;
+    z-index: 1100;
+    background-color: rgba(248, 248, 249, 0.92);
+    backdrop-filter: blur(5px);
+    height: 80vh;
+    width: 40%;
+    padding: 2px 10px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .menu-btn {
+    color: white;
+    font-size: 35px;
+    background: none;
+    border: none;
+  }
+
+  .navlinks-phone .menu-btn {
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: rgb(213, 59, 3);
+  }
+
+  .navlinks-phone ul {
+    margin-top: 20px;
+  }
+
+  .navlinks-phone ul li {
+    margin-bottom: 20px;
+    padding: 10px 5px;
+  }
+
+  .navlinks-phone a {
+    text-decoration: none;
+    font-size: 22px;
+    color: orangered;
+  }
+
+  .navlinks-phone ul li:hover {
+    background-color: rgb(219, 117, 80);
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+
+  .navlinks-phone a:hover {
+    color: white;
+    transition: 0.5s;
+  }
+
+  .navlinks {
+    display: none;
+  }
+
+  .request-services {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
+
+  .lower-text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lower-text .media {
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .header-text {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .header-text svg {
+    margin-right: 0;
+  }
+
+  .title {
+    font-size: 0.7em;
+  }
+
+  .title #link {
+    font-size: 0.9em;
+  }
+
+  .title .img img {
+    width: 40px;
+  }
+
+  .title p {
+    font-size: 11px;
+  }
+
+  .land-page-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+
+  .land-page-text h1 #link {
+    font-size: 1.1em;
+  }
+}
+
+@media(max-width: 425px) {
+   .navlinks-phone{
+    width: 80%;
+   }
+  .logo-name h1 {
+    font-size: 14px;
+  }
+
+  .logo-name p {
+    font-size: 6px;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    margin: 5px;
+  }
+
+  .header-container h4 {
+    font-size: 6px;
+  }
+
+  .title .img img {
+    width: 30px;
+  }
+  .request .request-services{
+    padding-top: 7px;
+    padding-bottom: 5px;
+  }
+  .land-page .land-page-text{
+    padding-top: 10px;
+  }
+  .land-page .land-page-text #land-page-par{
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .land-page .land-page-text h3{
+    font-size: 14px;
+  }
+}
+@media(max-width: 325px) {
+  .logo-name h1 {
+    font-size: 12px;
+  }
+
+  .logo-name p {
+    font-size: 5px;
+    width: 70px;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    margin: 2px;
+  }
+
+  .header-container h4 {
+    font-size: 5px;
+  }
+
+  .title .img img {
+    width: 30px;
+  }
+  .request .request-services{
+    padding-top: 7px;
+    padding-bottom: 5px;
+  }
+  .land-page .land-page-text{
+    padding-top: 10px;
+    padding: 10px;
+  }
+  .land-page .land-page-text #land-page-par{
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+  .land-page .land-page-text h3{
+    font-size: 12px;
+  }
+  #big{
+    font-size: 22px;
+  }
+  .our-services{
+    font-size: 22px;
+  }
+  #our-services{
+    font-size: 14px;
+  }
+  #about .our-services{
+    font-size: 35px;
+  }
+  #about h2{
+    font-size: 18px;
+    margin: 5px;
+  }
+  #about #our-services{
+    font-size: 12px;
+  }
+  .lower-text .media .media-head{
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .lower-text .media{
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  #gallery .img{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+  }
+  #gallery img{
+    width: 20px;
+  }
+}
